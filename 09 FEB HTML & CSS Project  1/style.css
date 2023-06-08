@@ -1,0 +1,361 @@
+body {
+  height: 100vh;
+  background-color:aquamarine;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.largeScreen {
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+.laptopScreen {
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+.tablet {
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+.mobilePhone {
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+/* media queries using min-width */
+
+ @media screen and (min-width:0px){
+    body{
+       background-color: rgb(255, 5, 97);
+    }
+
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: block;
+  }
+  }
+
+  @media screen and (min-width:425px){
+    body{
+        background-color: aqua;
+    }
+    .largeScreen{
+        display: none;
+      }
+    
+      .laptopScreen {
+        display: none;
+      }
+    
+      .tablet{
+        display: block;
+      }
+     
+      .mobilePhone{
+        display: none;
+      }
+
+  }
+
+ @media screen and (min-width:768px){
+    body{
+        background-color: rgb(139, 101, 34);
+    }
+
+    
+    .largeScreen{
+        display: none;
+      }
+    
+      .laptopScreen {
+        display: block;
+      }
+    
+      .tablet{
+        display: none;
+      }
+     
+      .mobilePhone{
+        display: none;
+      }
+
+
+}
+
+@media screen and (min-width:1024px) {
+    body {
+      background-color: green ;
+    }
+    .largeScreen{
+        display: block;
+      }
+    
+      .laptopScreen {
+        display: none;
+      }
+    
+      .tablet{
+        display: none;
+      }
+     
+      .mobilePhone{
+        display: none;
+      }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+      background-color: aquamarine ;
+    }
+    .mobilePhone {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .largeScreen {
+    display: none;
+  }
+
+} 
+
+/*  */
+/*  */
+/*  */
+
+/* media queries using max-width 
+
+@media screen and (max-width: 1440px) {
+  body {
+    background-color: green;
+  }
+  .largeScreen{
+    display: block;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: rgb(139, 101, 34);
+  }
+
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: block;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: aqua;
+  }
+
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: block;
+  }
+ 
+  .mobilePhone{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-color: rgb(255, 5, 97);
+  }
+
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: block;
+  }
+
+}
+
+/*  */
+/*  */
+/*  */
+/* media queries using both min-width and max-width 
+
+  @media screen and (min-width:0px) and  (max-width:425px){
+    body{
+       background-color: rgb(255, 5, 97);
+    }
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: block;
+  }
+
+  }
+
+  @media screen and (min-width:425px)  and  (max-width:768px){
+    body{
+        background-color: aqua;
+    }
+
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: tablet;
+  }
+ 
+  .mobilePhone{
+    display: none;
+  }
+
+  }
+
+ @media screen and (min-width:768px) and (max-width:1024px){
+    body{
+        background-color: rgb(139, 101, 34);
+    }
+
+
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: block;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+    body {
+      background-color: green ;
+    }
+    
+  .largeScreen{
+    display: block;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: block;
+  }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+      background-color: aquamarine ;
+    }
+  .largeScreen{
+    display: none;
+  }
+
+  .laptopScreen {
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+ 
+  .mobilePhone{
+    display: none;
+  }
+
+}
+*/
